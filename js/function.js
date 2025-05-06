@@ -43,7 +43,7 @@ axios.post(url, postData)
             data: {
                 labels: yearLabel,
                 datasets: [{
-                    label: 'Population in Finland 2014-2024',
+                    label: 'Suomen asukas määrä 2014-2024',
                     data: populationValues,
                     backgroundColor: 'rgba(75, 192, 192, 0.2)',
                     borderColor: 'rgb(46, 39, 38)',
@@ -55,7 +55,7 @@ axios.post(url, postData)
                 responsive: true,
                 plugins: {
                     title: {
-                        display: true
+                        display: false
                     },
                 scales: {
                     y: {
