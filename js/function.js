@@ -1,5 +1,4 @@
 const ctx = document.querySelector("#myChart").getContext("2d")
-
 const years = Array.from({ length: 11 }, (_, i) => (2014 + i).toString());
 const url = "https://pxdata.stat.fi:443/PxWeb/api/v1/fi/StatFin/vaerak/statfin_vaerak_pxt_11rb.px"
 const postData = {
@@ -43,7 +42,7 @@ axios.post(url, postData)
             data: {
                 labels: yearLabel,
                 datasets: [{
-                    label: 'Suomen asukas määrä 2014-2024',
+                    label: 'Suomen asukas määrä',
                     data: populationValues,
                     backgroundColor: 'rgba(75, 192, 192, 0.2)',
                     borderColor: 'rgb(46, 39, 38)',

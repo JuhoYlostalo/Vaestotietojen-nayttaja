@@ -13,9 +13,17 @@
             <li><a href="ageGroup.html">Ikäryhmät</a></li>
             <li><a href="comparison.html">Maakunnat</a></li>  
         </ul>
-        
+        <div id="container">
+            <h2>Otsikko</h2>
+            <label for="selectYear">Valitse vuosi</label>
+            <select id="selectYear">
+                <option value="" disabled selected>Valitse vuosi</option>
+            </select>
+            <canvas id="myChart" width="200" height="100"></canvas>
+        </div>
     </header>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="./js/ageGroup.js"></script>
 </body>
 </html>
