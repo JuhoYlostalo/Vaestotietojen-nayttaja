@@ -97,3 +97,81 @@ select{
     border-radius: 4px;
     text-align: center;
 }
+
+
+@media screen and (max-width: 1024px) {
+
+    p {
+        padding: 1em;
+        font-size: 1em;
+    }
+
+    canvas {
+        width: 90%;
+    }
+
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    li {
+        margin: 0.3em;
+    }
+
+    select{
+        font-size: 1.2em;
+        width: 50%;
+    }
+
+    option {
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    h2 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 0.95em;
+        padding: 0.8em;
+    }
+
+    canvas {
+        width: 95%;
+    }
+
+    ul {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    li {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    li a {
+        padding: 1em;
+        font-size: 1.1em;
+    }
+
+    select{
+        font-size: 1.2em;
+        width: 50%;
+    }
+
+    option {
+        font-size: 1.2em;
+    }
+
+    #selectWrapper select{
+        margin: 0.1em;
+        width: 40%;
+    }
+}
