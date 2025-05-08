@@ -1,41 +1,17 @@
+import { quarryIndex } from "./quarrys.js"
 const ctx = document.querySelector("#myChart").getContext("2d")
 const years = Array.from({ length: 11 }, (_, i) => (2014 + i).toString());
 const url = "https://pxdata.stat.fi:443/PxWeb/api/v1/fi/StatFin/vaerak/statfin_vaerak_pxt_11rb.px"
-const postData = {
-    "query": [
-      {
-        "code": "Vuosi",
-        "selection": {
-          "filter": "item",
-          "values": years
-        }
-      },
-      {
-        "code": "Sukupuoli",
-        "selection": {
-          "filter": "item",
-          "values": ["SSS"]
-        }
-      },
-      {
-        "code": "Tiedot",
-        "selection": {
-          "filter": "item",
-          "values": ["vaesto"]
-        }
-      }
-    ],
-    "response": {
-      "format": "json-stat2"
-    }
-  }
+const postData = quarryIndex(years)
+//console.log(postData)
 
 
 axios.post(url, postData)
     .then(response =>{
         const data = response.data
+        //console.log(data)
         const yearLabel = Object.values(data.dimension.Vuosi.category.label)
-        populationValues = data.value
+        const populationValues = data.value
     
         const populationChart = new Chart(ctx, {
             type: 'line',

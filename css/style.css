@@ -52,11 +52,29 @@ canvas{
     margin: 0 auto;
     width: 80%;
 }
+
+#selectWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+#selectWrapper select{
+    margin: 0.1em;
+    width: 20%;
+}
+
+#myBarChart{
+    padding-bottom: 1em;
+}
+
 p{
     text-align: center;
     font-size: 1.2em;
     color: #302828;
     padding: 0.5em;
+    margin: 0 auto;
 }
 footer {
     text-align: center;
@@ -66,4 +84,16 @@ footer {
     width: 100%;
     position: fixed;
     bottom: 0;
+}
+
+select{
+    display: block;
+    width: 20%;
+    padding: 0.5em;
+    margin: 1em auto;
+    font-size: 1.2em;
+    color: #252222;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    text-align: center;
 }

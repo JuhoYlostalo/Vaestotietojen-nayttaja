@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Suomen dataa</title>
+</head>
+<body>
+    <header>
+        <ul>
+            <li><a href="index.html">Etusivu</a></li>
+            <li><a href="ageGroup.html">Ikäryhmät</a></li>
+            <li><a href="comparison.html">Alueet</a></li>  
+        </ul>
+        <div id="container">
+            <h2>Väkiluku alueittain</h2>
+            <select id="selectYear">
+                <option value="" disabled selected>Valitse vuosi</option>
+            </select>
+            <div id="selectWrapper">
+                <select id="selectPlace1">
+                    <option value="" disabled selected>Valitse alue 1</option>
+                </select>
+                <select id="selectPlace2">
+                    <option value="" disabled selected>Valitse alue 2</option>
+                </select>
+            </div>
+            <canvas id="myBarChart" width="400" height="250"></canvas>  
+        </div>
+    </header>
+    
+    <footer>
+        Demo sivu
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script type="module" src="./js/comparison.js"></script>
+</body>
+</html>
