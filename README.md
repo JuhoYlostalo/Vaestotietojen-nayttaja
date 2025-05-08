@@ -1,4 +1,4 @@
-# Vaestötietojen-näyttäja
+# Väestötietojen-näyttäjä
 
 Tämä on simpeli web-projekti, jolla pystyt katsella Suomen väestön dataa. Data on haettu tilastokeskuksen avoimen rajapinnan kautta. Sivusto tarjoaa kaksi pääominaisuutta:
 
